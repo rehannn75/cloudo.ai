@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloudo | Enterprise AI Cloud Security Platform</title>
+  <meta name="description" content="Cloudo is a world-class, agentless cloud security platform providing real-time AI threat detection, compliance automation, and zero-trust mesh networks.">
+  
+  <!-- Tailwind CSS CDN for utility framework -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom design systems index.css -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-[#050816] text-[#f8fafc] overflow-x-hidden min-h-screen">
+
+  <!-- ==================== PUBLIC LAYOUT ==================== -->
+  <div id="public-layout" class="min-h-screen flex flex-col justify-between hidden">
+    <!-- Navigation header -->
+    <header class="sticky top-0 z-50 glass backdrop-blur-md border-b border-[rgba(255,255,255,0.05)] px-6 lg:px-20 py-4 flex justify-between items-center">
+      <a href="#home" class="flex items-center gap-2 text-xl font-bold font-cyber text-slate-100 tracking-wider">
+        <span class="w-3.5 h-3.5 rounded bg-[var(--neon-cyan)] inline-block shadow-[0_0_10px_var(--neon-cyan)]"></span>
+        CLOUDO
+      </a>
+      <div class="flex items-center gap-8">
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#overview" class="nav-link">Overview</a>
+          <a href="#platform" class="nav-link">Platform</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#solutions" class="nav-link">Solutions</a>
+          <a href="#compliance" class="nav-link">Compliance</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#resources" class="nav-link">Resources</a>
+          <a href="#about" class="nav-link">About Us</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="#login" class="nav-link hidden sm:inline-block font-semibold">Login</a>
+          <a href="#login" class="glow-btn glow-btn-primary py-2 px-4 text-xs font-semibold">Start Free</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main dynamic page view -->
+    <main id="public-viewport" class="flex-1"></main>
+
+    <!-- Public Footer -->
+    <footer class="border-t border-[rgba(255,255,255,0.05)] bg-[rgba(8,12,30,0.6)] px-6 lg:px-20 py-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <div class="col-span-2">
+          <a href="#home" class="flex items-center gap-2 text-lg font-bold font-cyber text-slate-100 mb-4">
+            <span class="w-3 h-3 rounded bg-[var(--neon-cyan)] inline-block shadow-[0_0_8px_var(--neon-cyan)]"></span>
+            CLOUDO
+          </a>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed mb-4">
+            Autonomous multi-cloud security platform built with zero-impact scanners and predictive intelligence paths.
+          </p>
+          <div class="text-[10px] text-slate-500 font-cyber font-bold uppercase">&copy; 2026 CLOUDO CYBER SYSTEMS. ALL RIGHTS RESERVED.</div>
+        </div>
+        <div>
+          <h4 class="text-xs font-cyber font-bold text-slate-300 uppercase tracking-widest mb-4">Architecture</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#platform" class="hover:text-[var(--neon-cyan)]">Platform overview</a></li>
+            <li><a href="#features" class="hover:text-[var(--neon-cyan)]">Cloud Modules</a></li>
+            <li><a href="#integrations" class="hover:text-[var(--neon-cyan)]">Integrations hub</a></li>
+            <li><a href="#status" class="hover:text-[var(--neon-cyan)]">Service Status</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-cyber font-bold text-slate-300 uppercase tracking-widest mb-4">Organization</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#about" class="hover:text-[var(--neon-cyan)]">About us</a></li>
+            <li><a href="#careers" class="hover:text-[var(--neon-cyan)]">Careers (We're hiring)</a></li>
+            <li><a href="#partners" class="hover:text-[var(--neon-cyan)]">Partners program</a></li>
+            <li><a href="#contact" class="hover:text-[var(--neon-cyan)]">Contact Gateway</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-cyber font-bold text-slate-300 uppercase tracking-widest mb-4">Compliance</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#compliance" class="hover:text-[var(--neon-cyan)]">SOC 2 Type II</a></li>
+            <li><a href="#compliance" class="hover:text-[var(--neon-cyan)]">ISO 27001</a></li>
+            <li><a href="#compliance" class="hover:text-[var(--neon-cyan)]">HIPAA Controls</a></li>
+            <li><a href="#faq" class="hover:text-[var(--neon-cyan)]">FAQ details</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ==================== AUTHENTICATION LAYOUT ==================== -->
+  <div id="auth-layout" class="min-h-screen flex items-center justify-center px-4 relative hidden">
+    <div class="cyber-grid"></div>
+    <div class="glass glass-glow-cyan p-8 w-full max-w-md relative z-10" id="auth-viewport"></div>
+  </div>
+
+  <!-- ==================== USER DASHBOARD LAYOUT ==================== -->
+  <div id="user-dashboard-layout" class="dashboard-grid hidden">
+    <!-- Sidebar navigation -->
+    <aside class="glass border-r border-[rgba(255,255,255,0.05)] bg-[#080c1e] p-6 flex flex-col justify-between">
+      <div>
+        <a href="#home" class="flex items-center gap-2 text-lg font-bold font-cyber text-slate-100 mb-8 tracking-wider">
+          <span class="w-3.5 h-3.5 rounded bg-[var(--neon-cyan)] inline-block shadow-[0_0_10px_var(--neon-cyan)]"></span>
+          CLOUDO
+        </a>
+        <div class="text-[10px] text-slate-500 font-cyber font-semibold tracking-wider mb-4 uppercase">Security Console</div>
+        <nav class="space-y-1">
+          <a href="#dashboard" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Dashboard</a>
+          <a href="#dashboard-overview" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Security Overview</a>
+          <a href="#dashboard-threats" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Threat Monitoring</a>
+          <a href="#dashboard-map" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Live Attack Map</a>
+          <a href="#dashboard-assets" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Cloud Assets</a>
+          <a href="#dashboard-servers" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Servers</a>
+          <a href="#dashboard-apps" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Applications</a>
+          <a href="#dashboard-containers" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Containers</a>
+          <a href="#dashboard-scanner" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Vulnerability Scanner</a>
+          <a href="#dashboard-alerts" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Alerts</a>
+          <a href="#dashboard-reports" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Reports</a>
+          <a href="#dashboard-compliance" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Compliance</a>
+          <a href="#dashboard-integrations" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Integrations</a>
+          <a href="#dashboard-billing" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Billing</a>
+          <a href="#dashboard-notifications" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Notifications</a>
+          <a href="#dashboard-api" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">API Keys</a>
+          <a href="#dashboard-profile" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Profile</a>
+          <a href="#dashboard-settings" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Settings</a>
+          <a href="#dashboard-support" class="user-sidebar-tab flex items-center gap-3 p-2.5 rounded text-xs font-semibold text-slate-400 hover:text-slate-200">Support</a>
+        </nav>
+      </div>
+      <div>
+        <div class="border-t border-[rgba(255,255,255,0.05)] pt-4">
+          <div class="text-xs font-cyber font-bold text-slate-200">Sarah Miller</div>
+          <div class="text-[9px] text-slate-500">Security Lead &bull; TechCorp</div>
+          <a href="#login" class="text-[10px] text-red-400 hover:underline block mt-3 font-semibold">Exit Portal</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main viewport container -->
+    <main class="flex flex-col min-h-screen">
+      <!-- Top navbar -->
+      <header class="glass border-b border-[rgba(255,255,255,0.05)] py-4 px-8 flex justify-between items-center bg-[#070c1e]/60">
+        <div class="text-xs font-cyber font-bold text-slate-400">TELEMETRY AGENT: CLOUD ACTIVE</div>
+        <div class="flex items-center gap-6">
+          <span class="w-2 h-2 rounded-full bg-[var(--neon-green)] animate-ping"></span>
+          <a href="#admin" class="glow-btn glow-btn-secondary py-1 px-3 text-[10px] font-cyber">ADMIN CONSOLE</a>
+        </div>
+      </header>
+      <div id="user-dashboard-viewport" class="flex-1 p-8 overflow-y-auto"></div>
+    </main>
+  </div>
+
+  <!-- ==================== ADMIN DASHBOARD LAYOUT ==================== -->
+  <div id="admin-dashboard-layout" class="dashboard-grid hidden">
+    <!-- Admin Sidebar navigation -->
+    <aside class="glass border-r border-[rgba(255,255,255,0.05)] bg-[#0a061c] p-6 flex flex-col justify-between">
+      <div>
+        <a href="#home" class="flex items-center gap-2 text-lg font-bold font-cyber text-slate-100 mb-8 tracking-wider">
+          <span class="w-3.5 h-3.5 rounded bg-[var(--neon-purple)] inline-block shadow-[0_0_10px_var(--neon-purple)]"></span>
+          CLOUDO
+        </a>
+        <div class="text-[10px] text-slate-500 font-cyber font-semibold tracking-wider mb-4 uppercase">Admin Operations</div>
+        <nav class="space-y-0.5">
+          <a href="#admin" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Dashboard</a>
+          <a href="#admin-customers" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Customers</a>
+          <a href="#admin-users" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">User Management</a>
+          <a href="#admin-team" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Team Management</a>
+          <a href="#admin-roles" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Roles & Permissions</a>
+          <a href="#admin-threats" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Threat Intelligence</a>
+          <a href="#admin-incidents" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Incident Response</a>
+          <a href="#admin-resources" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Cloud Resources</a>
+          <a href="#admin-containers" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Containers</a>
+          <a href="#admin-kubernetes" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Kubernetes</a>
+          <a href="#admin-servers" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Servers</a>
+          <a href="#admin-audit" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Audit Logs</a>
+          <a href="#admin-security-logs" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Security Logs</a>
+          <a href="#admin-analytics" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Analytics</a>
+          <a href="#admin-reports" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Reports</a>
+          <a href="#admin-compliance" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Compliance</a>
+          <a href="#admin-billing" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Billing</a>
+          <a href="#admin-subscriptions" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Subscriptions</a>
+          <a href="#admin-tickets" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Submitted Inquiries</a>
+          <a href="#admin-pricing-inquiries" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Pricing Inquiries</a>
+          <a href="#admin-templates" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Email Templates</a>
+          <a href="#admin-cms" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">CMS</a>
+          <a href="#admin-api" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">API Management</a>
+          <a href="#admin-backup" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Backup & Restore</a>
+          <a href="#admin-settings" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Settings</a>
+          <a href="#admin-activity" class="admin-sidebar-tab flex items-center gap-2 p-2 rounded text-[11px] font-semibold text-slate-400 hover:text-slate-200">Activity Logs</a>
+        </nav>
+      </div>
+      <div>
+        <div class="border-t border-[rgba(255,255,255,0.05)] pt-4">
+          <div class="text-xs font-cyber font-bold text-slate-200">Super Administrator</div>
+          <div class="text-[9px] text-slate-500">Master operations &bull; Cloudo</div>
+          <a href="#login" class="text-[10px] text-red-400 hover:underline block mt-3 font-semibold">Exit Portal</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main viewport container -->
+    <main class="flex flex-col min-h-screen">
+      <!-- Top navbar -->
+      <header class="glass border-b border-[rgba(255,255,255,0.05)] py-4 px-8 flex justify-between items-center bg-[#0a061c]/60">
+        <div class="text-xs font-cyber font-bold text-slate-400">MASTER SYSTEM REGISTRY: LOCKED</div>
+        <div class="flex items-center gap-6">
+          <span class="w-2.5 h-2.5 rounded-full bg-[var(--neon-purple)] animate-ping"></span>
+          <a href="#dashboard" class="glow-btn glow-btn-secondary py-1 px-3 text-[10px] font-cyber">USER CONSOLE</a>
+        </div>
+      </header>
+      <div id="admin-dashboard-viewport" class="flex-1 p-8 overflow-y-auto"></div>
+    </main>
+  </div>
+
+  <!-- ==================== GLOBAL FLOATING AI SECURITY ASSISTANT ==================== -->
+  <div id="floating-chat-bubble" onclick="window.toggleFloatingChat()" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-r from-[var(--neon-cyan)] to-[var(--neon-purple)] border border-[rgba(255,255,255,0.2)] shadow-[0_0_15px_rgba(0,240,255,0.4)] flex items-center justify-center cursor-pointer z-50 hover:scale-110 transition-smooth">
+    <svg class="w-7 h-7 text-[#050816]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+    </svg>
+  </div>
+
+  <div id="floating-chat-container" class="fixed bottom-24 right-6 w-80 h-96 glass border border-[rgba(0,240,255,0.15)] shadow-[0_8px_32px_0_rgba(0,240,255,0.08)] z-50 flex-col hidden rounded-xl overflow-hidden">
+    <header class="bg-[#0c1125] p-3 border-b border-[rgba(255,255,255,0.05)] flex justify-between items-center">
+      <span class="text-xs font-cyber font-bold text-slate-100 flex items-center gap-2">
+        <span class="w-2 h-2 rounded bg-[var(--neon-cyan)] animate-ping inline-block"></span>
+        AI Security Core
+      </span>
+      <button onclick="window.toggleFloatingChat()" class="text-slate-400 hover:text-white text-xs">&times;</button>
+    </header>
+    <div class="chat-container flex-1 bg-[#050816]/90">
+      <div id="floating-chat-messages" class="chat-messages"></div>
+      <div class="p-2 border-t border-[rgba(255,255,255,0.05)] flex gap-2">
+        <input type="text" id="floating-chat-input" placeholder="Query scan/threats/compliance..." class="cyber-input py-1 px-3 text-xs flex-1" />
+        <button id="floating-chat-send" class="glow-btn glow-btn-primary py-1 px-3 text-xs">&rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrapper script module -->
+  <script type="module">
+    import { initRouter } from './app.js';
+    import { setupChatbot } from './components.js';
+
+    // Global toggle for floating chatbot
+    window.toggleFloatingChat = () => {
+      const container = document.getElementById('floating-chat-container');
+      if (container) {
+        container.classList.toggle('hidden');
+        container.classList.toggle('flex');
+        if (container.classList.contains('flex')) {
+          const input = document.getElementById('floating-chat-input');
+          if (input) input.focus();
+        }
+      }
+    };
+
+    // Initialize application routing
+    initRouter();
+
+    // Wire up global AI assistant chatbot
+    setupChatbot('floating-chat-messages', 'floating-chat-input', 'floating-chat-send');
+  </script>
+</body>
+</html>
